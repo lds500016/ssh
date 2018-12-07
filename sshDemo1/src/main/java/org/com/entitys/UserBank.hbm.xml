@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.com.entitys.UserBank" table="UserBank">
+        <id name="userId">
+            <generator class="native"></generator>
+        </id>
+        <property name="userName" column="userName"></property>
+        <property name="userMoney" column="userMoney"></property>
+    </class>
+</hibernate-mapping>
